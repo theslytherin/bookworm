@@ -1,13 +1,22 @@
-/* Made with love by Mutiullah Samim*/
 
-@import url('https://fonts.googleapis.com/css?family=Numans');
+@font-face {
+  font-family: myFirstFont;
+  src: url(font/Montserrat-Bold.ttf);
+ /* font-weight: bold;*/
+}
+@font-face {
+  font-family: myFirstFont1;
+  src: url(font/Great_Wishes.otf);
+ /* font-weight: bold;*/
+}
+
 
 html,body{
-background-image: url('images/book2.jpg') ;
+background-image: url('images/book4.jpg') ;
 background-size: cover;
 background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
+height: 80%;
+font-family: 'myFirstFont', sans-serif;
 }
 
 .container{
@@ -17,6 +26,7 @@ align-content: center;
 
 .card{
 height: 370px;
+top:100px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
@@ -26,7 +36,7 @@ background-color: rgba(0,0,0,0.5) !important;
 .social_icon span{
 font-size: 60px;
 margin-left: 10px;
-color: #FFC312;
+color: white;
 }
 
 .social_icon span:hover{
@@ -46,7 +56,7 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #FFC312;
+background-color:white;
 color: black;
 border:0 !important;
 }
@@ -71,7 +81,7 @@ margin-right: 5px;
 
 .login_btn{
 color: black;
-background-color: #FFC312;
+background-color: white;
 width: 100px;
 }
 
@@ -88,17 +98,23 @@ color: white;
 margin-left: 4px;
 }
 .search-container {
-    float: right;
+  border: 2px solid rgb(102, 99, 99);
+  color: white;
+  border-radius: 40px;
+    float: left;
+    margin-left: 130px;
+    
   }
   
   .search-container input[type=text] {
-      margin-left: 400px;
-    border-radius: 5px;
+      
+     border-radius: 60px;
     padding: 6px;
    margin-top: 5px;
    width: 400px;
     font-size: 17px;
     border: none;
+    
   }
   
   .search-container button {
@@ -108,14 +124,17 @@ margin-left: 4px;
     padding: 6px 10px;
     margin-top: 5px;
     margin-right: 16px;
-    background: #ddd;
+    background: transparent;
     font-size: 17px;
     border: none;
     cursor: pointer;
   }
   
    .search-container button:hover {
-    background: #ccc;
+    background:transparent;
+  }
+  ::placeholder {
+    color: white;
   }
   
   @media screen and (max-width: 600px) {
@@ -131,6 +150,15 @@ margin-left: 4px;
       padding: 14px;
     }
     .search-container input[type=text] {
-      border: 1px solid #ccc;  
+      border: 1px solid transparent;  
     }
   }
+
+.bo{
+  text-align: center;
+  font-size: 80px;
+  position: centre;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative; left:0px; top:250px
+}
